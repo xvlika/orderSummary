@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap'); 
+
+*{
+    margin: 0px;
+}
+#patternBackground{
+    width: 100%;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url(./imgs/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:20px;
+    width: 327px;
+    min-height: 567px;
+    background-color: rgb(255, 255, 255);
+}
+
+#hero{
+    position: relative;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+#orderSummary{
+    color: #1F2E55;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+#description{
+    margin: 0% 12% 0% 12%;
+    color: #717FA6;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+#planBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 279px;
+    background: #F7F9FF;
+    border-radius: 11px;
+    height: 90px;
+}
+#annualPlan{
+    color: #1F2E55;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+#perYear{
+    color: #717FA6;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#change{
+    cursor: pointer;
+    color: #382AE1;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    transition: 0.4s;
+}
+#proceedPayment{
+    cursor: pointer;
+    width: 70%;
+    height: 50px;
+    border-radius: 11px;
+    background: #382AE1;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+}
+#paymentTxt{
+    position: relative;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+    margin-top: 16px;
+    cursor: pointer;
+}
+#cancelOrder{
+    color: #717FA6;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    cursor: pointer;
+}
+@media screen and (min-width:1440px){
+    #orderSummary{
+        font-size: 28px;
+        margin-top: 45px;
+    }
+    #description{
+        font-size: 16px;
+        margin-top: 17px;
+    }
+    #planBox{
+        width: 354px;
+        margin-top: 20px;
+    }
+    #paymentTxt{
+        font-size: 15px;
+    }
+    #proceedPayment{
+        transition: 0.4s;
+        width: 354px;
+        margin-top: 32px;
+    }
+    #proceedPayment:hover{
+        background: #766CF1;
+        box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+    }
+    #proceedPayment:active{
+        scale: 0.95;
+    }
+    #cancelOrder{
+        transition: 0.4s;
+        margin-top: 32px;
+    }
+    #cancelOrder:hover{
+        color: #1F2E55;
+    }
+    #box{
+        width: 450px;
+       
+    }
+    #change {
+        cursor: pointer;
+        color: #382AE1;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+        overflow: hidden; 
+        position: relative;
+        transition: 0.4s;
+        text-decoration: none;
+    }
+    
+    #change::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1.7px; 
+        width: 100%; 
+        background-color: #382AE1;
+        transition: width 0.4s ease-out; 
+    }
+
+    #change:active::after {
+        width: 0; 
+    }
+}
